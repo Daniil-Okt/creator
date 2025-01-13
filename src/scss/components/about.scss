@@ -1,0 +1,140 @@
+.about {
+    @include responsive(padding-bottom, 63, 406.39);
+    position: relative;
+    z-index: 1;
+    @include responsive(margin-top, -142, 21.62);
+    &__fon-left {
+        @include responsive(width, 419, 194);
+        @include responsive(height, 389, 273);
+        position: absolute;
+        top: vw(206);
+        left: 0;
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media(max-width:768px){
+            top: auto;
+            bottom: vw(136, 320);
+        }
+    }
+
+    &__fon-right {
+        @include responsive(width, 548, 210);
+        @include responsive(height, 835, 373);
+        position: absolute;
+        top: vw(-176);
+        right: 0;
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media(max-width:768px){
+            top: auto;
+            bottom: vw(111.56, 320);
+        }
+    }
+ 
+
+    &__container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__mark {
+        @include responsive(width, 779, 297);
+        @include responsive(height, 411.65, 157);
+        background: url(@img/about-mark-fon.png) no-repeat center center / contain;
+        @include responsive(padding-top, 41.04, 14.11);
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        text-shadow: 0 0 63px 0 #e0d9c9;
+        line-height: 134%;
+        font-weight: 400;
+        @include responsive(font-size, 185, 70);
+        letter-spacing: -0.16em;
+        color: #e0d9c9;
+        @include responsive(padding-right, 17, 0);
+
+        @media(min-width:769px){
+            transform: rotate(-4.18deg);
+        }
+    }
+
+    &__text {
+        max-width: vw(662);
+        font-family: var(--second-family);
+        font-weight: 500;
+        @include responsive(font-size, 37, 24);
+        text-align: center;
+        color: #000;
+        text-shadow: 0 0 63px 0 #e0d9c9;
+        @include responsive(margin-top, -30, 10);
+        @media(max-width:768px){
+            max-width: 100%;
+        }
+    }
+
+    &__mark-text {
+        // position: relative;
+        // left: 50%;
+        // transform: translateX(-50%);
+        @include responsive(margin-top, 11, 15.35);
+        @include responsive(width, 589.34, 320);
+        @include responsive(height, 113, 131);
+        background: url(@img/about-mark-text-fon.png) no-repeat center center / contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0 0 63px 0 #e0d9c9;
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 27px;
+        @include responsive(font-size, 27, 20);
+        text-align: center;
+        
+        color: #e6e1d6;
+        @include responsive(padding-top, 16, 18);
+        @include responsive(padding-bottom, 10, 10);
+        overflow-wrap: break-word;
+        span {
+            @include responsive(max-width, 432, 266);
+        }
+
+        @media(max-width:768px){
+            background: url(@img/about-mark-text-fon-mob.png) no-repeat center center / contain;
+
+        }
+    }
+
+    &__social {
+        @include responsive(margin-top, -26, -34);
+        margin-left: auto;
+        margin-right: auto;
+        @media(max-width:768px){
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.social {
+}
+.button {
+}

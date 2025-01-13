@@ -1,0 +1,20 @@
+// Заголовки, общие БЄМ блоки и проче...
+.page {
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.wrapper {
+    background: url(@img/page-bg.png) no-repeat center center / cover;
+}
+

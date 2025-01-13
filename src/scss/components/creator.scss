@@ -1,0 +1,186 @@
+.creator {
+    position: relative;
+    &__container {
+    }
+    &__fon-left {
+        @include responsive(width, 728, 208);
+        @include responsive(height, 1278.21, 208);
+        position: absolute;
+        @include responsive(top, 70, 152);
+        @include responsive(left, 0, -35);
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__fon-right {
+        @include responsive(width, 1058, 411);
+        @include responsive(height, 1197, 420);
+        position: absolute;
+        @include responsive(top, 70, 121);
+        @include responsive(right, 0, -79.39);
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    &__body {
+        position: relative;
+        z-index: 1;
+        max-width: vw(1196);
+        margin-left: auto;
+        margin-right: auto;
+        @media(max-width:768px){
+            max-width: 100%;
+        }
+    }
+
+    &__mark {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        @include responsive(margin-top, -65, 0 );
+        @include responsive(padding-top, 123.12, 53);
+        @include responsive(width, 1196, 393.62);
+        @include responsive(min-width, 1196, 393.62);
+        @include responsive(height, 632, 208);
+
+        text-align: center;
+        background: url(@img/creator-mark-fon.png) no-repeat center center / contain;
+
+        @media(min-width:769px){
+            margin-top: vw(-65);
+            transform: translateX(-50%) rotate(3.39deg);
+        }
+    }
+
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 400;
+        @include responsive(font-size, 185, 60);
+        letter-spacing: -0.16em;
+        line-height: 134%;
+        color: #e0d9c9;
+        text-shadow: 0 0 63px 0 #e0d9c9;
+    }
+    &__text {
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: vw(47);
+        text-align: center;
+        color: #e6e1d6;
+        text-shadow: 0 0 63px 0 #e0d9c9;
+        @media(max-width:768px){
+            display: none;
+        }
+    }
+
+    &__social {
+        @media(min-width:769px){
+            transform: rotate(15deg);
+            margin-top: vw(-177);
+            margin-left: vw(122.64);
+        }
+        @media(max-width:768px){
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+
+    &__button.button {
+ 
+
+        transform: rotate(4.41deg);
+        &:hover {
+            transform: rotate(4.41deg) scale(1.05);
+        }
+        &:active {
+            transform: rotate(4.41deg) scale(1);
+        }
+
+        @media(min-width:769px){
+            margin-left: vw(204.42);
+        }
+        @media(max-width:768px){
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__img {
+        @include responsive(margin-top, -205, 192);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        @include responsive(width, 1834, 616);
+        @include responsive(height, 1003, 337);
+        img {
+            width: 100%;
+        }
+    }
+
+    .about__mark-text {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: vw(-34, 320);
+        @media(min-width:769px){
+            display: none;
+        }
+    }
+}
+.social {
+    @include responsive(padding-top, 0.5, 0.5);
+    @include responsive(width, 382.39, 382.39);
+    @include responsive(height, 130.03, 130.03);
+    background: url(@img/social-fon.png) no-repeat center center / contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include responsive(gap, 2.58, 2.58);
+    a {
+        @include responsive(height, 53.15, 53.15);
+        width: auto;
+        cursor: pointer;
+        transition: all 0.3s ease  0s;
+        img {
+            height: 100%;
+            width: auto;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+.button {
+    position: relative;
+    z-index: 2;
+    @include responsive(width, 195.43, 195.43);
+    @include responsive(height, 92.61, 92.61);
+    background: url(@img/button-fon.png) no-repeat center center / contain;
+    @include responsive(padding-top, 3, 3);
+    @include responsive(padding-right, 5, 5);
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    @include responsive(font-size, 48, 48);
+    letter-spacing: -0.16em;
+    color: #fff;
+    line-height: 134%;
+    cursor: pointer;
+    transition: all 0.3s ease  0s;
+    @include responsive(margin-top, -25, -25);
+    &:hover {
+        transform: scale(1.05);
+    }
+    &:active {
+        transform: scale(1);
+    }
+}
